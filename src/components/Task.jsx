@@ -83,6 +83,11 @@ const Task = ({ item }) => {
                     <button className='btn bg-red-800 hover:bg-red-600' onClick={() => handleDelete(item.id)}>Eliminar</button>
                 </div>
             }
+            {
+                item.completed
+                    ? <button className='btn bg-red-800 hover:bg-red-600' onClick={() => handleDelete(item.id)}>Eliminar</button>
+                    : null
+            }
 
         </div >
     )
